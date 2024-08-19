@@ -1,0 +1,268 @@
+﻿Requirements Gathering: Assignment# 2
+ 
+Aidan Premeau,  
+Brian Zapata Resendiz,  
+Johnny Mai,  
+Jacob McCormack,  
+and Niel Patel 
+Software Engineering, Florida Gulf Coast University 
+CEN 3073: Requirements Engineering 
+Prof. Ingrid Buckley 
+February 22nd, 2024 
+
+
+
+
+
+
+
+
+
+
+
+
+Functional Requirements: 
+1. Prescription Dispensing 
+1. Changes to the dispensary inventory must generate a log of who changed inventory values and what values were changed. 
+2. The software must allow for the pharmacy dispenser to modify the count of medication.
+3. The software must create a log of the pharmacist and the prescriptions they dispensed. 
+4. The software shall dispense exactly the amount of medication listed on the prescription. 
+5. The software patient list will store the patient ID, prescription name, and count for 7 years.
+6. The software shall not allow the pharmacist to refill a prescription that is out of date or out of refills. 
+7. The software shall not allow the pharmacist to modify any details on the prescription.
+8. The software must keep track of the number of times a prescription has been refilled. 
+9. The software inventory shall not allow the pharmacist to dispense medication without a valid prescription. 
+10. The software inventory shall not allow the pharmacist to dispense medication if there is insufficient medication to fulfill the prescription.
+ 
+ 
+2. Patient Prescriptions 
+1. The current medications must be able to be viewed to identify the patients currently daily usage. 
+2. The request refill must display how many refills the patient has to keep track of the quantity 
+3. The request refill must send the doctor a request for a refill. 
+4. Medications must be able to be viewed as how much it cost for patients during purchase time 
+5. Displaying the medication statues is important because you want to let the customer know when their prescriptions are ready for pickup 
+6. You can establish a connection by contacting the pharmacy in case the patient has any questions about their medication. 
+7. Allow the pharmacy to identify which insurance the company must see if the insurance is covering the current patient’s prescriptions. 
+8. Viewing the customers medications allergies to see which medications the patient will not be able to take 
+9. Establish a way to confirm with the doctor the number of doses can have to prevent any harm to the patients' health. 
+10. Be able to view and change patients' information such as phone number, email address, and update any changes to their medication list. 
+ 
+ 
+ 
+3. Medication (including vitamins) and Medical Devices 
+1. Order management and communication maintains usability of the system and ensures real-time sharing of order processing information as systems must provide accurate information such as delivery or availability time for a particular order. 
+2. Accurate medical history as it relates to adverse reactions to drugs or other medications. 
+3. Stability of the system is integral, as to fulfill an order without altering the integrity of the order or requiring additional information. 
+4. Verification must be included to ensure that the correct medication or equipment is being used for a particular patient or purpose. 
+5. Flexibility should be a crucial element as the user should be able to alter the information of an order during verification. 
+6. Automation would allow the wholesale ordering of medicines and equipment then increasing the efficiency and ensuring that inventory is always full. 
+7. Communication with the physician or nurse should be available, and the system should allow the deferring of verification to permit this necessary function. 
+8. Prioritization: the system should provide means to prep daily used drugs and fulfillment of said drugs. 
+9. Documentation: when scanning or processing doses there should always be proper documentation. 
+10. Monitoring: the system should provide a means of monitoring transactions of clinical interventions or event reporting (adverse reactions to medications). 
+4. Health Insurance (including primary, secondary, and tertiary insurance policies to cover patient expenses) 
+        
+* Policy Management Module should provide patients with a user-friendly interface to update and manage their insurance policies securely. 
+* Real-time Coverage Verification of the system must verify the coverage status of patients’ insurance policies in real-time. Immediate feedback should be provided to pharmacy staff regarding coverage status, including flags for expired or inactive policies. 
+* Electronic Claim Processing of the system should support the electronic submission of insurance claims to primary, secondary, and tertiary insurers. It should include automated claim submission processes and integration with insurer systems for seamless processing and tracking. 
+* Co-payment amounts should be calculated based on insurance policy details and medication specifics. The system should determine co-payments, consider policy-specific rules, and display payment details to patients and pharmacy staff. 
+* Coverage Restrictions of the system should identify medications or treatments not covered by the patient’s insurance. It should maintain a database of covered and non-covered items, automatically flagging non-covered items and providing alternative suggestions or assistance for patients. 
+* Policy Expiry Alerts should notify patients and pharmacy staff about upcoming insurance policy expiry dates. Alerts should be configurable and available through multiple notification channels. 
+* Network Provider Validation of the system must validate whether healthcare providers are in-network for patients’ insurance policies. It should integrate with insurer databases for provider validation and provide immediate feedback on network status. 
+* Benefits Coordination of the system should coordinate benefits between primary, secondary, and tertiary insurance policies to lower patient out-of-pocket expenses. 
+* Insurance Information Access allow pharmacy staff to have easy access to patient insurance policy details to assist patients effectively. The system should provide secure and quick retrieval of policy details during patient interactions. 
+* Pre-authorization requirements for medications covered by insurance policies should be verified by the system. It should integrate with insurer databases for pre-authorization checks.
+5. Medical Inventory:Pharmacist Supply, Ordering and Stocking 
+1. Inventory Management System: The system shall display to the pharmacist and update real time stock level, updating the levels as prescriptions are filled, new medicine comes in, or medicine is discarded. 
+2. Dead Stock Identification: The system shall identify and notify the pharmacists of dead stock (expired items) to the pharmacist.
+3. Dead Stock Reclamation: The system shall reduce dead stock by reducing unclaimed medicine and reclaiming them in the inventory.
+4. User defined Threshold: The system shall allow pharmacists to define max and min thresholds for medicine inventory.
+5. Order Automation: The system shall order medicine automatically when a medicine passes below the pharmacist min threshold.
+5. Sales Trend Identification: The system shall display sales trends by graphing sales of each medicine over time to the pharmacist and techs.
+6. Shortage Identification: The system shall notify the pharmacist and techs of shortages (when the demand of a drug exceeds the supply of the drug in the country).
+7. High Risk Identification: The system shall identify and flag to the pharmacist and techs of high risk and regulated narcotics 
+8. Overstocked Inventory Identification: The system shall identify and notify pharmacists and techs of overstocked times. 
+9. HIPPA Compliance: The system shall comply with regulatory restrictions HIPPA (health insurance portability and accountability act) by not releasing customer information.
+10. DEA Compliance: The system shall not sell any narcotics listed by  the DEA (drug enforcement agency).
+11. GDPR Compliance:The system shall comply with all  GDPR (General Data Protection Regulation) regulations.
+10. POS Connectivity: The system shall integrate with the POS (Point of sale) system, updating the inventory levels with each purchase.
+Non-Functional Requirements: 
+1. Dispensing  
+1. The software inventory must log the user out if they provide no input for 3 minutes.
+2. The software inventory database must use SHA 512 encryption.
+3. The software inventory must require username and password authentication to view and/or modify any information.
+4. The software inventory shall have a big font option for visually impaired users.
+2. Prescriptions  
+1. Fast messaging to the doctor in case of emergency or important questions. 
+2. Rapid prescription messenger to get any medication updates to patients such as time of estimate of pickup. 
+3. Being able to update the patient's profile quickly and save changes. 
+4. A medication update logger that allows the medical staff and patient to see the current medication being offered. 
+3. Medication (including vitamins) and Medical Devices 
+1. Maintainability: the system must ensure the regular creation and storage of backup records for all prescriptions and medication inventory transactions. These backups should include comprehensive data on purchase history, stock levels, and any alterations made to prescription records. 
+2. Limited access: access to patient records and information regarding their medication history must be restricted. Only authorized users with appropriate permissions should be able to view or modify such data. Unauthorized users should be prohibited from accessing this information to ensure patient confidentiality and data security. 
+3. Auditability: the system must support comprehensive auditability by providing clear logging and tracking mechanisms for all access to information or medication transactions.  
+4. Tracking: the system must implement precise tracking mechanisms to record the administration of medications to patients. This tracking should include details such as the medication administered, the patient receiving it, and the healthcare professional responsible (pharmacist or doctor).  
+4. Health Insurance (including primary, secondary, and tertiary insurance policies to cover patient expenses) 
+1. Security: Ensure encrypted access to insurance information is granted only to authorized personnel, such as pharmacy staff, administrators, insurance agents, healthcare providers, compliance officers, and IT support. Authorization will be managed through unique user credentials and role-based access permissions, with regular audits to maintain compliance.
+2. Reliability: Guarantee uninterrupted availability for insurance inquiries and claims processing during operational hours. Implement measures and proactive monitoring to minimize downtime and ensure seamless service, while acknowledging that system availability aligns with pharmacy operating hours.
+3. Performance: Process insurance verification and claims within 1-10 minutes. 
+4. Usability: Ensure navigation for staff to minimize errors. 
+5. Auditability: Log changes to policies, claims, and any other relevant information.for compliance. 
+6. Data Integrity: Maintain up-to-date insurance records. 
+5. Medical Inventory: Supply, Ordering and Stocking 
+1. The system shall ensure user-friendly accessibility for all individuals, featuring an intuitive interface familiar to users of Windows applications.
+2. The system shall maintain high reliability standards by ensuring availability aligns with user demands, meeting user requirements seamlessly, and promptly within milliseconds notifying users of any encountered errors.
+3. Performance shall be optimized to deliver updates within milliseconds, ensuring minimal latency in displaying up-to-date information to users. 
+4. The system shall display in a manner conforming to ISO readability and accessibility standards.
+
+
+ 
+Prevailing Regulations/Standards (NFR) for Pharmacy Software Systems: 
+Non Functional Requirements are related not to how the system functions but defines how the system should perform. In the case of the pharmacy system it should follow the CGMP regulations enforced by the FDA. The key regulations that should be followed are as follows:  
+1. Following the FDA approval process for marketing new drugs[4] 
+2. Establishing Current Good Manufacturing Practice (cGMP) standards for drug         
+        
+manufacturing, processing, packing, and holding[4] 
+3. Specifying cGMP requirements for finished pharmaceutical products[4] 
+4. Outlining cGMP for Positron Emission Tomography (PET) drugs[4] 
+5. Addressing general regulations for biological products[4] 
+ These rules ensure that the system has a confirmed identity, strength, quality, and ensures the purity of the drugs. 
+ 
+Safety Concerns and Hazards: 
+Some of the greatest safety concerns and hazards regarding pharmacy software systems are information security, reliability, and data integrity. Making sure patient information is secure is critical for pharmacy software considering how confidential patient records are. Similarly, reliability is another important concern for pharmacy software as they need to be available at all times, especially when the drugs being dispensed are essential for living, like insulin. Having too much downtime is simply not an option. Another safety concern with pharmacy software is making sure patient records remain intact. The system must accurately record and report the number of times a prescription has been refilled, especially for addictive drugs. Additionally, the system should never put a patient in a position where they can no longer refill a prescription or receive the wrong drugs due to a processing error on the system’s side.
+ 
+ASSIGNMENT #2 
+(50 points) Question 1: Create Use Case diagrams based on the functional requirements you wrote in Assignment#1, for   each of the following essential services of a pharmacy software system.  
+1. Dispensing  
+  
+
+2. Prescriptions  
+1. Consider the Patient, Doctors, Pharmacist, Pharmacy Technician 
+
+
+  
+
+
+
+
+
+3. Medication (including vitamins) and Medical Devices 
+  
+[a][b]
+4. Health Insurance (including primary, secondary, and tertiary insurance policies to cover patient expenses) 
+          
+             5. Medical Inventory: Supply, Ordering and Stocking 
+  
+
+ 
+Additional Requirements: 
+6. Note you, you can draw one use case per category, because several requirements can be expressed in one use case. 
+7. However, if you find that the lines in your use case diagrams are crisscrossing, then create two use cases per category in that event. 
+2. Creating clear readable diagrams should be your goal. 
+8. Follow the standard UML guidelines, syntax, and rules to create your use case diagrams. 
+ 
+(20 points) Question 2:  Create Use Case diagrams based on the nonfunctional requirements you wrote in Assignment#1 for   each of the following essential services of a pharmacy software system: 
+     1. Dispensing  
+  
+
+     2. Prescriptions  
+3. Consider the Patient, Doctors, Pharmacist, Pharmacy Technician 
+
+
+  
+
+     3. Medication (including vitamins) and Medical Devices   
+     4. Health Insurance (including primary, secondary, and tertiary insurance policies to cover patient expenses) 
+  
+
+     5. Medical Inventory: Supply, Ordering and Stocking 
+  
+
+ 
+Additional Requirements: 
+9. Note you, you can draw one use case per category, several nonfunctional requirements can be presented in one use case. 
+10. However, if you find that the lines in your use case diagrams are crisscrossing, then create two use cases per category in that event. 
+1. Creating clear readable diagrams should be your goal. 
+11. Follow the standard UML guidelines, syntax, and rules to create your use case diagrams. 
+ 
+(30 points) Question 3: Create one class diagram that represents the each of the following essential services of a pharmacy software system: 
+1. Dispensing  
+
+
+The dispenser class is a boundary class that keeps a reference to the inventory database, patient records database, and change logs database. The class acts as an interface to send, receive, and modify data from the database. Any methods called that modify information also generate a changelog that gets added to the change log database.
+  
+
+             2. Prescriptions  
+5. Consider the Patient, Doctors, Pharmacist, Pharmacy Technician 
+
+
+
+
+  
+
+
+
+
+
+
+
+             3. Medication (including vitamins) and Medical Devices 
+  
+
+4. Health Insurance (including primary, secondary, and tertiary insurance policies to cover patient expenses) 
+  
+
+5. Medical Inventory: Supply, Ordering and Stocking 
+   
+Additional Requirements: 
+13. Follow the standard UML guidelines, syntax, and rules to create your class diagrams. 
+1. Creating clear readable diagrams should be your goal. 
+14. Provide a detailed description of the class diagram. The explanation should be very comprehensive and describe the relationships between classes in your class diagram thoroughly. 
+. 
+ 
+Additional Instructions: 
+* Please ensure that all your UML diagram follow the syntax, rules and guidelines of UML (-25 points) 
+* See lecture15 in Modules on Canvas 
+* Include each group member’s name in your submitted document. 
+* Ensure that your document is nicely organized and formatted (- 10 points) 
+* Use appropriate headings and subheading in each category to organize your document. 
+* Include understandable/clear titles for each diagram and numbering. 
+
+
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+Works Cited 
+ 
+ 
+[1]Siska, M. (n.d.). Functional Requirements for Pharmacy Information Management Systems. Functional Requirements for Pharmacy Information Management Systems : November 2006 - Pharmacy Purchasing & Products Magazine. https://www.pppmag.com/article/107/November_2006/Functional_Requirements_for_Pharmacy_Information_Management_Systems/ 
+[2]Siska, M. (n.d.-b). Pharmacy Information Management Systems. https://www.pppmag.com/documents/V3N8/P2-5.pdf 
+[3]What does a pharmacy dispenser do? role & responsibilities. Glassdoor. (n.d.). https://www.glassdoor.co.uk/Career/pharmacy-dispense-career_KO0,17.htm 
+[4]Center for Drug Evaluation and Research. (n.d.). Facts about the current good manufacturing practices (CGMP). U.S. Food and Drug Administration. https://www.fda.gov/drugs/pharmaceutical-quality-resources/facts-about-current-good-manufacturing-practices-cgmp#:~:text=The%20main%20regulatory%20standard%20for,will%20be%20safe%20and%20effective. 
+[5]Kovalenko, P. (2023, June 21). 10 main features of a Pharmacy Inventory Management System. Langate. https://langate.com/10-main-features-of-a-pharmacy-inventory-management-system/  
+[6]Roy, D., Chakraborty, P., & Bhaduree, M. (2020a, February 11). Pharmacy Management System . Academia.edu. https://www.academia.edu/41944678/Pharmacy_management_system_Autosaved_  
+[7]Prescription Hope (2023, April 26). Does My Doctor Know If I Filled My Prescription? What Do They Know? Retrieved February 17, 2024, from https://prescriptionhope.com/does-my-doctor-know-if-i-filled-my-prescription-what-do-they-know/ 
+[8]
+ 
+ 
+ 
+
+
+[a]What is going on here? It looks like my cable drawer.
+1 total reaction
+Aidan Premeau reacted with 😜 at 2024-03-26 07:33 AM
+[b]Your cable drawer has a lot of stick figures and labels
